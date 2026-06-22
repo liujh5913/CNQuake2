@@ -1,4 +1,4 @@
-> 🧪 Current branch：[`ai-feature-test`](https://github.com/liujh5913/CNQuake2/tree/ai-feature-test) — intended to implement planned features (AI features, etc.).
+> 🧪 Current branch：[`ai-feature-test`](https://github.com/liujh5913/CNQuake2/tree/ai-feature-test) — intended to implement planned features.
 
 [简体中文](README.md) | [繁體中文](README-TW.md) | **English**
 

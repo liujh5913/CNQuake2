@@ -1,4 +1,4 @@
-> 🧪 当前分支：[`ai-feature-test`](https://github.com/liujh5913/CNQuake2/tree/ai-feature-test) — 旨在实现规划中的功能（AI特性等）。
+> 🧪 当前分支：[`ai-feature-test`](https://github.com/liujh5913/CNQuake2/tree/ai-feature-test) — 旨在实现规划中的功能。
 
 **简体中文** | [繁體中文](README-TW.md) | [English](README-EN.md)
 
