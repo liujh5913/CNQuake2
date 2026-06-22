@@ -75,6 +75,33 @@
                     <label for="location">地名：</label>
                     <input type="text" id="location" placeholder="请输入地名">
                 </div>
+                <div class="form-group threshold-group">
+                    <label class="threshold-title">本地烈度触发阈值</label>
+                    <div class="threshold-value">当前设定：<img id="threshold-value" src="./img/4.png" alt="烈度" class="threshold-icon">度<span class="help-tip" data-tooltip="地震预警事件中，仅在预估本地烈度达到阈值时进行提醒。&#10;对日本以外地区生效。&#10;设置为&quot;0&quot;表示不作筛选。&#10;参考：&#10;- 1度及以下：低层基本无感，高层轻微有感。&#10;- 2~3度：低层轻微有感，高层轻微或显著有感；悬挂物轻微晃动。&#10;- 4~5度：所有人群静止时有感，睡眠中的一部分人被摇醒；悬挂物显著晃动。&#10;- 6~7度：令人感到恐惧，睡眠中的大部分人被摇醒；部分物件倾倒；抗震性差的房屋可能出现破坏。&#10;- 8~9度：行走困难；家具倾倒；抗震性差的房屋可能倒塌，抗震性好的房屋可能损坏。&#10;- 10度及以上：难以站立，有抛起感；房屋大规模倒塌；山河易形。">?</span></div>
+                    <div class="slider-container">
+                        <div class="slider-track" id="slider-track">
+                            <span class="slider-dot"></span>
+                            <span class="slider-dot"></span>
+                            <span class="slider-dot"></span>
+                            <span class="slider-dot"></span>
+                            <span class="slider-dot"></span>
+                            <span class="slider-dot"></span>
+                            <span class="slider-dot"></span>
+                            <span class="slider-dot"></span>
+                            <span class="slider-dot"></span>
+                            <span class="slider-dot"></span>
+                            <span class="slider-dot"></span>
+                            <span class="slider-dot"></span>
+                            <span class="slider-dot"></span>
+                        </div>
+                        <input type="range" id="intensity-threshold" min="0" max="12" step="1" value="4">
+                    </div>
+                    <div class="threshold-labels">
+                        <span>0</span>
+                        <span>6</span>
+                        <span>12</span>
+                    </div>
+                </div>
                 <div class="form-group button-group">
                     <button id="save-settings">保存</button>
                     <button id="cancel-settings">取消</button>
@@ -147,6 +174,7 @@
         </div>
         <div id="eew_Bar">
             <div id="eew_source">-----预警 第-报</div>
+            <div id="eew_pagination" style="display:none;">1/1</div>
             <div id="eew_Information">---- flex --时--分--秒\n发生-.-级地震, 震中烈度-.-度,\n本地烈度-.-度, ----</div>
             <div id="eew_countdown">--</div>
             <div id="miaohou">秒后</div>
@@ -162,6 +190,14 @@
         <!-- <div id="list_Bar1"> 
     优化省略
     -->
+    </div>
+    <div id="global-tooltip" class="global-tooltip"></div>
+    <div id="weather-bubble" class="weather-bubble">
+        <div class="weather-bubble-icon"></div>
+        <div class="weather-bubble-body">
+            <div class="weather-bubble-title"></div>
+            <div class="weather-bubble-time"></div>
+        </div>
     </div>
 </body>
 
