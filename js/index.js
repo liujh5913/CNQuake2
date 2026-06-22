@@ -1,4 +1,4 @@
-const version = "v2.0.260620 SP3";
+const version = "26H1 Insider";
 
 // 全局配置对象
 const GlobalConfig = {
